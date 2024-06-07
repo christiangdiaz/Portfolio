@@ -39,6 +39,7 @@ function DispTranslate() {
                 </button>
                 <section>
                     <img src={dispPicture} alt='Display' />
+                    <span className='badge'>Work in Progress</span>
                 </section>
                 <button className='RightButton' onClick={handleRightClick}>
                     <FontAwesomeIcon icon={faArrowRight} />
