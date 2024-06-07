@@ -21,7 +21,7 @@ function App() {
     switch (selectedProject) {
       case 'Workout Tracker':
         return <DispWorkout/>
-      case 'Translations':
+      case 'Perfect Accent':
         return <DispTranslate/>
       default:
         return null;
