@@ -52,7 +52,7 @@ function DispWorkout(){
             <footer>
                 <p>
                     <a href='https://www.mybulkbuddy.com' target='_blank'>Live Demo</a>
-                    |
+                     | 
                     <a href='https://www.github.com/csnse/workouttracker' target='_blank'>GitHub Repo</a>
                 </p>
             </footer>
