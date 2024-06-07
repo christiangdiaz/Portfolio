@@ -6,8 +6,11 @@ import DispTranslate from './DispTranslate';
 
 function App() {
   const projects = ['Workout Tracker', 'Translations'];
-  const [selectedProject, setSelectedProject] = useState('');
   
+  const [selectedProject, setSelectedProject] = useState(() => {
+    return localStorage.getItem('selectedProject') || '';
+  });
+
   const handleClick = (project) => {
     setSelectedProject(project)
 
@@ -23,6 +26,12 @@ function App() {
         return null;
       }
   };
+
+
+  useEffect(() => {
+    localStorage.setItem('selectedProject', selectedProject);
+  }, [selectedProject]);
+  
 
   return (
     <div className="App">
