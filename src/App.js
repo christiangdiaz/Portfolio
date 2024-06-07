@@ -5,7 +5,7 @@ import DispWorkout from './DispWorkout';
 import DispTranslate from './DispTranslate';
 
 function App() {
-  const projects = ['Workout Tracker', 'Translations'];
+  const projects = ['Workout Tracker', 'Perfect Accent'];
   
   const [selectedProject, setSelectedProject] = useState('');
 
