@@ -7,13 +7,14 @@ import DispTranslate from './DispTranslate';
 function App() {
   const projects = ['Workout Tracker', 'Translations'];
   
-  const [selectedProject, setSelectedProject] = useState(() => {
-    return localStorage.getItem('selectedProject') || '';
-  });
+  const [selectedProject, setSelectedProject] = useState('');
 
   const handleClick = (project) => {
-    setSelectedProject(project)
-
+    if(project==selectedProject){
+      setSelectedProject('')
+    } else{
+      setSelectedProject(project);
+    }
   }
   
   const renderProject = () => {
@@ -27,10 +28,6 @@ function App() {
       }
   };
 
-
-  useEffect(() => {
-    localStorage.setItem('selectedProject', selectedProject);
-  }, [selectedProject]);
   
 
   return (
