@@ -27,14 +27,11 @@ function DispWorkout(){
     const handleRightClick = () => {
         const currentIndex = pictures.indexOf(dispPicture);
         let newIndex = currentIndex+1;
-        console.log(newIndex)
-        console.log(pictures.length)
         if(newIndex===pictures.length){
             newIndex=0;
         }
         setDispPicture(pictures[newIndex]);
     }
-
 
     return(
         <div className='WorkoutBox'>
@@ -49,6 +46,9 @@ function DispWorkout(){
                 <button className='RightButton' onClick={handleRightClick}>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </button>
+            </div>
+            <div className='description'>
+                <h4>This project was created for my Advanced Topics in Software Engineering class. UI design was created using React, backend is a mix of AWS and Firebase, with AWS managing hosting and data storage, and Firebase managing authentication and user information. </h4>
             </div>
             <footer>
                 <p>

@@ -85,3 +85,10 @@ footer a:hover {
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+}

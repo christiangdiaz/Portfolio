@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 import DispWorkout from './DispWorkout';
 import DispTranslate from './DispTranslate';
+import DispCondo from './DispCondo';
 
 function App() {
-  const projects = ['Workout Tracker', 'Perfect Accent'];
+  const projects = ['Workout Tracker', 'Perfect Accent', 'Pelican Point'];
   
   const [selectedProject, setSelectedProject] = useState('');
 
@@ -23,6 +24,8 @@ function App() {
         return <DispWorkout/>
       case 'Perfect Accent':
         return <DispTranslate/>
+      case 'Pelican Point':
+        return <DispCondo/>
       default:
         return null;
       }
@@ -52,7 +55,7 @@ function App() {
         </section>
       </main>
       <footer className="App-footer">
-        <p>Contact me at: <a href="mailto:cgd6055@gmail.com">cgd6055@gmail.com</a> or <a href="tel:2392220007">239-222-0007</a></p>
+        <p>Contact me at: <a href="mailto:cgd6055@gmail.com" target='blank'>cgd6055@gmail.com</a> / <a href='mailto:cgdiaz@umass.edu' target='blank'>cgdiaz@umass.edu</a> or <a href="tel:2392220007">239-222-0007</a></p>
       </footer>
     </div>
   );

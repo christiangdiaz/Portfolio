@@ -45,6 +45,9 @@ function DispTranslate() {
                     <FontAwesomeIcon icon={faArrowRight} />
                 </button>
             </div>
+            <div className='description'>
+                <h4>This project, developed for a client, serves as a contact point direct to consumer. Customers can submit a file, managed by Firestore, to request a quote.</h4>
+            </div>
             <footer>
                 <p><a href='https://www.perfect-accent.com' target='_Blank'>Live Demo</a> | <a href='https://www.github.com/cdiaz2024/translations' target='_Blank'>GitHub Repo</a></p>
             </footer>
