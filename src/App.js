@@ -55,7 +55,7 @@ function App() {
         </section>
       </main>
       <footer className="App-footer">
-        <p>Contact me at: <a href="mailto:cgd6055@gmail.com" target='blank'>cgd6055@gmail.com</a> / <a href='mailto:cgdiaz@umass.edu' target='blank'>cgdiaz@umass.edu</a> or <a href="tel:2392220007">239-222-0007</a></p>
+        <p>Contact me at: <a href="mailto:christiangdiaz2@gmail.com" target='blank'>christiangdiaz2@gmail.com</a> / <a href='mailto:cgdiaz@umass.edu' target='blank'>cgdiaz@umass.edu</a> or <a href="tel:2392220007">239-222-0007</a></p>
       </footer>
     </div>
   );
